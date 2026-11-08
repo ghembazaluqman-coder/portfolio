@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
+    <canvas id="bg"></canvas>
+
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -15,19 +17,22 @@
     </nav>
 
 
-    <h1>Hi, I'm Jannick. I build websites.</h1>
-    <p>
-      Web developer working with HTML, CSS and JavaScript. Clean code, clear
-      communication.
-    </p>
-    <div>
-      <a class="btn primary" href="#projects">See my projects</a>
-      <a class="btn" href="#contact">Get in touch</a>
-    </div>
+    <section class="hero">
+      <h1>Hi,</h1>
+      <h1>I'm Jannick - curious designer and developer based in Oran, Algeria.</h1>
+      <p>
+        Web developer working with HTML, CSS and JavaScript. Clean code, clear
+        communication.
+      </p>
+      <div>
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
 
 
     <h2 id="about">About me</h2>
-    <p>
+    <p class="about-me-text">
       I'm Jannick from Germany and I live in Algeria. I'm learning web development
       every day and turn what I learn into small, real projects. I care about
       clean structure, readable code and sites that work on every screen.
@@ -79,8 +84,13 @@
     <p>
       Have a project in mind? Send me a message.
     </p>
-    <a href="mailto:ghembazaluqman@gmail.com">My E-Mail: ghembazaluqman@gmail.com</a>
+    <div>
+      <a href="mailto:ghembazaluqman@gmail.com" class="btn">My E-Mail: ghembazaluqman@gmail.com</a>
+    </div>
 
+    <footer>© 2026 Jannick</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="index.js"></script>
     
   </body>

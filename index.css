@@ -1,8 +1,12 @@
+
+
+
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
   color: rgb(232, 235, 240);
   background-color: #0b0d12;
   line-height: 1.6;
+
 }
 
 h1 {
@@ -19,6 +23,11 @@ a {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  background-color: rgba(11, 13, 18, 0.6);
   display: flex;
   justify-content: flex-end;
   gap: 24px;
@@ -26,7 +35,7 @@ nav {
 }
 
 body > *:not(nav) {
-  max-width: 760px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 24px;
@@ -75,7 +84,8 @@ button.btn {
   background-color: #151922;
   padding: 20px;
   border-radius: 12px;
-  border-left: 5px solid #ffb020;
+  border-left: 5px solid #4cc9f0;
+  margin-top: 30px;
 }
 
 .panel.active {
@@ -118,13 +128,69 @@ article:hover {
 
 
 h1 {
-  margin-top: 400px;
+  margin-top: 200px;
+  font-size: clamp(28px,min(6vw,7vh),64px);
 }
 
 h2 {
   margin-top: 140px;
   margin-bottom: 24px;
+  scroll-margin-top: 80px;
 }
+
+.hero {
+  min-height: calc(100vh - 140px);
+  min-height: calc(100svh - 60px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+footer {
+  text-align: center;
+  color: #9aa3b2;
+  padding: 40px 24px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+body > *:not(nav):not(.hero):not(#bg):not(script) {
+  position: relative;
+  z-index: 10;
+}
+
+nav {
+  z-index: 20;
+}
+
+.about-me-text {
+  color: white;
+  background-color: #151922;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #4cc9f0;
+}
+
+
 
 
 
