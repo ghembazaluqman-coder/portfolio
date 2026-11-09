@@ -55,7 +55,7 @@ scene.environment = new THREE.PMREMGenerator(renderer).fromEquirectangular(envTe
 
 
 const camera = new THREE.PerspectiveCamera(40,window.innerWidth / window.innerHeight, 0.1, 100);
-camera.position.z = 9;
+camera.position.z = 10;
 
 const material = new THREE.MeshStandardMaterial({
   color: 0xd9dde3,
@@ -91,7 +91,7 @@ right.position.x = 1.8;
 
 const logo = new THREE.Group();
 logo.add(left, slash, right);
-logo.position.y = 0.5;
+logo.position.y = 0.6;
 scene.add(logo);
 
 

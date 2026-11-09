@@ -6,7 +6,7 @@ body {
   color: rgb(232, 235, 240);
   background-color: #0b0d12;
   line-height: 1.6;
-
+  margin: 0;
 }
 
 h1 {
@@ -139,8 +139,8 @@ h2 {
 }
 
 .hero {
-  min-height: calc(100vh - 140px);
-  min-height: calc(100svh - 60px);
+  min-height: calc(100vh - 160px);
+  min-height: calc(100svh - 110px);
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
@@ -188,6 +188,10 @@ nav {
   padding: 20px;
   border-radius: 12px;
   border-left: 5px solid #4cc9f0;
+}
+
+p.reveal.in {
+  margin-bottom: 20px;
 }
 
 
